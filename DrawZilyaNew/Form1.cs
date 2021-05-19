@@ -51,5 +51,12 @@ namespace DrawZilyaNew
             paper.DrawLine(pen, 180, 500, 390, 510);
             paper.DrawLine(pen, 390, 510, 60, 60);
         }
+
+        private void pnlDraw_MouseClick(object sender, MouseEventArgs e)
+        {
+            var paper = pnlDraw.CreateGraphics();
+            var pen = new Pen(Color.Red, 5);
+            paper.DrawEllipse(pen, e.X, e.Y, 100, 100);
+        }
     }
 }

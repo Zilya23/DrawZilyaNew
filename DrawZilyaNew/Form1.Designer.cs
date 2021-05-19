@@ -59,6 +59,7 @@ namespace DrawZilyaNew
             this.pnlDraw.Name = "pnlDraw";
             this.pnlDraw.Size = new System.Drawing.Size(800, 350);
             this.pnlDraw.TabIndex = 1;
+            this.pnlDraw.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlDraw_MouseClick);
             // 
             // btnL
             // 
